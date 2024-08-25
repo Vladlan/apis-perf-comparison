@@ -1,0 +1,13 @@
+config:
+  target: http://localhost:8080
+  phases:
+    - duration: 30
+      arrivalRate: 1
+      name: ramp up
+    - duration: 60
+      arrivalRate: 10
+      name: sustain
+scenarios:
+  - flow:
+      - get:
+          url: '/api/posts'
