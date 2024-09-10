@@ -12,7 +12,4 @@ data class Post(
     val title: String,
 
     val content: String
-) {
-    // No-argument constructor
-    constructor() : this(null, "", "")
-}
+)
